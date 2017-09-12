@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .my{
+            background-color: aquamarine
+        }
+    </style>
+</head>
+<body>
+    <div class="my">hello world!</div>
+</body>
+</html>
