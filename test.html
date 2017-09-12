@@ -26,14 +26,17 @@
 
     <script>
         document.write("안녕하세요")
+        function no_click(obj) {
+            document.getElementById(obj).innerHTML="바꾸지마";
+        }
     </script>
 </head>
 <body>
 <div class="my">정말 보기가 아깝네</div>
 <div class="my2">레알?</div>
-<p id="p">helloworld</p>
-<script>
-    document.getElementById("p").innerHTML="hello!!!"
-</script>
+<p id="p" onclick="no_click(this)">helloworld</p>
+이거 왜 안바뀌니?
+왜 이러냐 앙?
+바뀌어라!
 </body>
 </html>
