@@ -5,11 +5,17 @@
     <title>test</title>
     <style>
         .my{
-            background-color: aquamarine
+            background-color: aquamarine;
+            width: 200px;
+            height: 50px;
+            border: 25px dotted purple;
+            padding: 25px;
+            margin: 25px;
         }
     </style>
 </head>
 <body>
-    <div class="my">hello world!</div>
+    <div class="my">정말 보기가 아깝네</div>
+    
 </body>
 </html>
