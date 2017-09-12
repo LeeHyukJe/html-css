@@ -6,16 +6,28 @@
     <style>
         .my{
             background-color: aquamarine;
-            width: 200px;
+            width: auto;
             height: 50px;
-            border: 25px dotted purple;
+            border: 25px solid purple;
             padding: 25px;
             margin: 25px;
+        }
+        .my2{
+            background-image:url("https://ssl.pstatic.net/tveta/libs/1172/1172125/933a6954c5d03c43b442_20170908172755141.jpg");
+            border: 5px solid black;
+            margin: auto;
+            height: 150px;
+            width: auto;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
     <div class="my">정말 보기가 아깝네</div>
-    
+    <div class="my2">레알?</div>
+    <p id="p">helloworld</p>
+    <script>
+        document.getElementById("p").innerHTML="hello!!!"
+    </script>
 </body>
 </html>
