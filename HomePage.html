@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>MyHompage</title>
     <style>
-
+        * {
+            margin: 0;
+        }
 
         div.gate{
+            margin:1%;
             position: absolute;
             background-image: url("images/uni.jpg");
-            width: 100%;
+            width: 95%;
             padding:120px 0;
             opacity: 0.9;
         }
@@ -27,11 +30,11 @@
 
         ul.menu{
             list-style-type: none;
-            margin: 0;
+            margin: 1%;
             padding:0;
             overflow: hidden;
             background-color: #333;
-
+            width:93%;
         }
         li.sign_in{
             float: right;
@@ -57,24 +60,27 @@
         div.gradient1{
             /*position: fixed;*/
             /*bottom: 0;*/
-            margin: 1000px 0 0 0;
+            margin: 26% 0 0 0;
             width:100%;
             padding:100px 0;
             background: linear-gradient(to top,gray,white);
             text-align: center;
             vertical-align: middle;
         }
-        .slot{
-            position: relative;
-            top:300px;
-
+        nav.slot{
+            display: inline-block;
+            position: absolute;
+            top:10px;
+            border-radius: 5px;
+            border:2px solid gray;
+            height:450px;
+            width:180px;
+            margin: 10px;
         }
 
         ul.myslot {
             position: absolute;
             list-style-type: square;
-            border: solid gray;
-            border-radius: 10px;
             padding-left: 23px;
             padding-right:10px;
         }
@@ -85,6 +91,30 @@
 
         ul.myslot li:hover{
             background-color: #336699;
+        }
+
+        div.main_view{
+            display: inline-block;
+            position: absolute;
+            top:10px;
+            left:230px;
+            border-radius: 5px;
+            border:2px solid gray;
+            width: 70%;
+            height:90%;
+            margin: 10px;
+        }
+
+        .main_container{
+            position: relative;
+            margin-left:5%;
+            margin-top:1%;
+            display: inline-block;
+            top:300px;
+            border-radius: 5px;
+            border:2px solid gray;
+            width:1080px;
+            height: 500px;
         }
 
     </style>
@@ -103,14 +133,19 @@
     <div class="gate" style="color: tomato;">
         <div class="winner">The Winner Takes It All</div>
     </div>
-    <nav class="slot" style="margin-left: 20px; margin-top: 10px">
-        <ul class="myslot">
-            <div>My Practice</div>
-            <li>Java</li>
-            <li>JSP</li>
-            <li>html-css</li>
-        </ul>
-    </nav>
+    <div class="main_container">
+        <nav class="slot">
+            <ul class="myslot">
+             <div>My Practice</div>
+                <li>Java</li>
+                <li>JSP</li>
+                <li>html-css</li>
+             </ul>
+        </nav>
+        <div class="main_view">
+
+        </div>
+    </div>
     <div class="gradient1">Copyright(c)2017 이혁제 All rights reserved. </div>
 </body>
 </html>
