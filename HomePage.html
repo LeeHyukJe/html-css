@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHompage</title>
+    <style>
+
+
+        div.gate{
+            position: absolute;
+            background-image: url("images/uni.jpg");
+            width: 100%;
+            padding:120px 0;
+            opacity: 0.9;
+        }
+
+        div.winner{
+            position: relative;
+            left: 0;
+            width: 100%;
+            top:40px;
+            left: 600px;
+            font-size: 20pt;
+            color:orangered;
+            font-family: 나눔바른고딕;
+        }
+
+        ul.menu{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+        li.sign_in{
+            float: right;
+
+        }
+
+        li.home{
+            float: left;
+        }
+        
+        li a{
+            display: inline;
+            color: white;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: #111;
+        }
+
+        div.gradient1{
+            /*position: fixed;*/
+            /*bottom: 0;*/
+            margin: 1000px 0 0 0;
+            width:100%;
+            padding:100px 0;
+            background: linear-gradient(to top,gray,white);
+            text-align: center;
+            vertical-align: middle;
+        }
+        .slot{
+            position: relative;
+            top:300px;
+
+        }
+
+        ul.myslot {
+            position: absolute;
+            list-style-type: square;
+            border: solid gray;
+            border-radius: 10px;
+            padding-left: 23px;
+            padding-right:10px;
+        }
+
+        ul.myslot li{
+            margin-left:0;
+        }
+
+        ul.myslot li:hover{
+            background-color: #336699;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="home"><a href="HomePage.html"><img src="images/homeIcon.png" height="48" width="48"/></a></li>
+            <li class="sign_in"><a href="addrbook_control.jsp?action=list">회원리스트</a>
+            </li>
+            <li class="sign_in"><a href="addrbook_form.jsp">회원가입</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="gate" style="color: tomato;">
+        <div class="winner">The Winner Takes It All</div>
+    </div>
+    <nav class="slot" style="margin-left: 20px; margin-top: 10px">
+        <ul class="myslot">
+            <div>My Practice</div>
+            <li>Java</li>
+            <li>JSP</li>
+            <li>html-css</li>
+        </ul>
+    </nav>
+    <div class="gradient1">Copyright(c)2017 이혁제 All rights reserved. </div>
+</body>
+</html>

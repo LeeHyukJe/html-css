@@ -1,42 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
-    <style>
-        .my{
-            background-color: aquamarine;
-            width: auto;
-            height: 50px;
-            border: 25px solid purple;
-            padding: 25px;
-            margin: 25px;
-        }
-        .my2{
-            background-image:url("https://ssl.pstatic.net/tveta/libs/1172/1172125/933a6954c5d03c43b442_20170908172755141.jpg");
-            border: 5px solid black;
-            margin: auto;
-            height: 150px;
-            width: auto;
-            background-repeat: no-repeat;
-        }
-
-
-    </style>
-
-    <script>
-        document.write("안녕하세요")
-        function no_click(obj) {
-            document.getElementById(obj).innerHTML="바꾸지마";
-        }
-    </script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dropdown.css" media="screen">
 </head>
 <body>
-<div class="my">정말 보기가 아깝네</div>
-<div class="my2">레알?</div>
-<p id="p" onclick="no_click(this)">helloworld</p>
-이거 왜 안바뀌니?
-왜 이러냐 앙?
-바뀌어라!
+<div class="dropdown">
+    <button class="dropbtn">DropDown</button>
+    <div class="dropdown-content">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+    </div>
+</div>
 </body>
 </html>

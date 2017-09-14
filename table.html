@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>making table</title>
+    <style>
+        table.type09{
+            border-collapse: collapse;
+            text-align: left;
+            line-height:1.5;
+            font-family: 나눔바른고딕;
+
+        }
+        table.type09 th{
+            padding: 10px;
+            font-weight:bold;
+            vertical-align: top;
+            color: #369;
+            border-bottom:3px solid #036;
+            background: #f3f6f7;
+        }
+        table.type09 td{
+            width:350px;
+            padding: 10px;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+        }
+
+    </style>
+    <script>
+        function colors(id) {
+            var table=document.getElementById(id);
+            table.style.color="red";
+        }
+        function colors1(id){
+            var table=document.getElementById(id);
+            table.style.color="balck";
+        }
+    </script>
+</head>
+<body>
+    <table class="type09">
+        <th>제목</th>
+        <th>내용</th>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+        <tr><td>id</td><td>name</td><td>tel</td></tr>
+    </table>
+    <a style="align-content: center" href=""></a>
+</body>
+</html>
